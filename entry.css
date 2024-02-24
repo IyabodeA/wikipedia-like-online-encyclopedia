@@ -1,0 +1,91 @@
+.topbar{
+    height: 50px;
+    background-color: rgb(88, 88, 180);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.topbar2{
+    display: flex;
+    height: 80px;
+    background-color: rgb(88, 88, 180);
+   position: absolute;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    top: 0px;
+}
+.hamburger{
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 25px;  
+}
+.subscribe-button{
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+   padding-top: 5px;
+   padding-left: 8px;
+   padding-bottom: 5px;
+   padding-right: 8px;
+    border-radius: 7px;
+    cursor:pointer;
+    margin-top: 10px;
+    transition: opacity 0.15s;
+    height: 30px; 
+    margin-right: 25px; 
+}
+.subscribe-button:hover{
+    opacity: 0.7;
+}
+.subscribe-button:active{
+    opacity: 0.5;
+}
+.sidebarcontainer{
+    display: flex;
+
+}
+.sidebarcontainer::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    z-index: 998;
+}
+.sidebar{
+    height: 100%;
+    width: 90px;
+    background-color: rgb(88, 88, 180);
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-90px);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 999;
+}
+
+.sidebarcontainer:hover .sidebar{
+  transform: translateX(0);
+}
+.sideicons{
+   background: linear-gradient(to right,black,white,rgb(13, 13, 197));
+    
+   
+}
+.sideicons:hover{
+    background: linear-gradient(to left,black,white,rgb(13, 13, 197));
+    opacity: 0.8;
+    cursor: pointer;
+}

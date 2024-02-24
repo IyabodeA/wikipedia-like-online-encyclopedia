@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcribe</title>
+    <style>
+        .login{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    background: linear-gradient(to right,rgb(80,80,180),white,rgb(80,80,180));
+    justify-content: center;
+    height: 300px;
+    border-radius: 10px;   
+    margin-top: 90px;
+    
+}
+.login:hover{
+    background-color: white;
+    .input{background-color: white;}
+    cursor: pointer;
+}
+.input{
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    background-color:  rgb(196, 195, 186);
+}
+.signupbutton{
+    background: linear-gradient(to right,rgb(3, 19, 107),white);   
+}
+.signupbutton:hover{  
+    text-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
+    background: linear-gradient(to top,rgb(20, 20, 20),white); 
+}
+.getstarted{
+    color: black;
+}
+.getstarted:hover{
+  color:#5858b4;
+}
+.info{
+    text-align: center;
+    color: rgb(214, 212, 212);
+    
+}
+.information:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+    </style>
+</head>
+<body style="background: linear-gradient(to left,#5858b4,white);">
+    <div class="topbar" style="height: 60px;background-color: #5858b4; width: 100%;display: flex;position: fixed;top: 0;left: 0;justify-content: space-between;">
+        <h2 style="padding-top: 10px;"></h2>
+    </div>
+    <div style="display: flex;justify-content: space-evenly;">
+    <div  class="login">
+        <h2 >New Here?</h2>
+        <p>Sign in to continue</p>
+        <input class="input"type="text" placeholder="User Name">
+        <input class="input" type="password"placeholder="Enter Password">
+        <input class="input" type="password" placeholder="Re-enter password">
+        <p  class="getstarted">Get Started &#8594</p>
+        <p>Don't Have an account? </p>
+     <a href="entry.html"><button class="signupbutton">Sign In</button></a>
+    </div>
+
+    <div  class="login">
+        <h2 >Welcome Back!</h2>
+        <p>Log in to continue</p>
+        <input class="input"type="text" placeholder="User Name">
+        <input class="input" type="password"placeholder="Password">
+        <p  class="getstarted">Get Started &#8594</p>
+        <p>Already Have an account? </p>
+     <a href="entry.html"><button class="signupbutton">Log In</button></a>
+    </div>
+</div>
+
+<div style="height: 200px;width: 100%;opacity: 0.5;background-color: rgb(68, 64, 64);left: 0;bottom: 0;position: fixed;">
+    <div class="info">
+        <a target="_self" href="aboutEncyclopidia.html" style="color: white;text-decoration: none;"><p class="information">About Us</p></a>
+       <a target="_self" href="privacypolicyEncyclopedia.html" style="color: white;text-decoration: none;"> <p class="information">Privacy Policy</p></a>
+        <a target="_self" href="termsEncyclopedia.html" style="color: white;text-decoration: none;"><p class="information">Terms of Service</p></a>
+        <a target="_self" href="news.html" style="color: white;text-decoration: none;"><p class="information">News</p></a>
+        <a target="_self" href="contact.html" style="color: white;text-decoration: none;"><p class="information">Contact Us</p></a>
+        <footer>
+            <p style="color: white;">&copy; 2024 ENCYCLOPEDIA. All rights reserved.</p>
+        </footer>
+     </div>
+</div>
+
+</body>
+</html>
